@@ -1,0 +1,8 @@
+name: PotionBar
+version: ${project.version}
+main: me.gush3l.potionbar.PotionBar
+depend: [Vault]
+commands:
+  potionbar:
+    description: Base Command PotionBar
+    aliases: [pb]

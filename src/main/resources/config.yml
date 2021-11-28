@@ -1,0 +1,58 @@
+nospace: "&cYou don't have enough space in your inventory! You need to have atleast 1 slot free!"
+notcmd: "&8[&cPotion&aBar&8] &cThis is not a command! Type /pb help to see a list of the commands!"
+reload: "&8[&cPotion&aBar&8] &aPlugin reloaded the config.yml file!"
+noperm: "&8[&cPotion&aBar&8] &cYou can't do that!"
+drankpot: "&8[&cPotion&aBar&8] &aYou just drank the potion %PotionName% Price: %Price% Prize: %Prize% Chance: %Chance%"
+help:
+  - "&8[&cPotion&aBar&8] &7Plugin Commands:"
+  - "&8[&cPotion&aBar&8] &e/potionbar give [potion-name]"
+  - "&8[&cPotion&aBar&8] &e/potionbar debug [potion-name]"
+  - "&8[&cPotion&aBar&8] &e/potionbar reload"
+  - "&8[&cPotion&aBar&8] &e/potionbar help"
+items:
+  0:
+    name: '&aCactus Wine'
+    price: 5000
+    chance: 60
+    color: 'AQUA'
+    lore:
+      - "&e&lChance: &c&l%Chance%"
+      - "&e&lPrize: &a&l%Prize%"
+    commands:
+      win:
+        - "broadcast You won! %Player% %Chance% %Prize% %Price% %PotionName%"
+      lose:
+        - "broadcast You lost! %Player% %Chance% %Prize% %Price% %PotionName%"
+    effects:
+      win:
+        - "FAST_DIGGING;2;99"
+      lose:
+        - "POISON;2;10"
+    messages:
+      win:
+        - "win message"
+      lose:
+        - "lose message"
+  1:
+    name: '&eTequila'
+    price: 5670
+    chance: 45
+    color: 'RED'
+    lore:
+      - "&e&lChance: &c&l%Chance%"
+      - "&e&lPrize: &a&l%Prize%"
+    commands:
+      win:
+        - "broadcast You won! %Player% %Chance% %Prize% %Price% %PotionName%"
+      lose:
+        - "broadcast You lost! %Player% %Chance% %Prize% %Price% %PotionName%"
+    effects:
+      win:
+        - "FAST_DIGGING;2;99"
+      lose:
+        - "POISON;2;10"
+    messages:
+      win:
+        - "win message"
+      lose:
+        - "lose message"
